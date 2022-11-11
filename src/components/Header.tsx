@@ -2,7 +2,7 @@ import COC from "../public/coc-logo.svg";
 
 const Header = () => {
   return (
-    <div className="navbar">
+    <div className="navbar md:container md:mx-autow-100">
       <div className="flex-none">
         <div className="dropdown">
           <label tabIndex={0} className="btn btn-ghost btn-circle">
