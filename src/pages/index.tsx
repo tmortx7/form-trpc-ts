@@ -1,11 +1,11 @@
 import Header from "../components/Header";
 
 const HomePage = () => {
-	return (
-		<>
-			<Header />
-			<div className="flex  mt-10 justify-center">Hello World</div>
-		</>
-	);
+  return (
+    <div>
+      <Header />
+      <div className="flex  mt-10 justify-center"></div>
+    </div>
+  );
 };
 export default HomePage;
