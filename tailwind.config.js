@@ -7,17 +7,24 @@ module.exports = {
   theme: {
     container: {
       center: true,
-       padding: {
-        DEFAULT: '1rem',
-        sm: '2rem',
-        lg: '4rem',
-        xl: '5rem',
-        '2xl': '6rem',
+      padding: {
+        DEFAULT: "1rem",
+        sm: "2rem",
+        lg: "4rem",
+        xl: "5rem",
+        "2xl": "6rem",
       },
     },
-    extend: {},
+    extend: {
+      gridTemplateColumns: {
+        100: "100px 250px 1fr",
+      },
+      gridTemplateRows: {
+        ben: "auto 1fr auto",
+      },
+    },
   },
-  plugins: [require("daisyui")],
+  plugins: [require("@tailwindcss/typography"), require("daisyui")],
   daisyui: {
     themes: ["business"],
   },
