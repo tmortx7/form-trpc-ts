@@ -1,13 +1,18 @@
-import Layout from "../components/Layout";
+import AppLayout from "../components/layout/AppLayout";
+import Channels from "../components/layout/Channels";
+import Content from "../components/layout/Content";
+import Header from "../components/layout/Header";
+import Teams from "../components/layout/Teams";
 
 const HomePage = () => {
   return (
     <div>
-      <Layout>
-        <div className="bg-white">01</div>
-        <div>02</div>
-        <div>03</div>
-      </Layout>
+      <AppLayout>
+        <Teams />
+        <Header />
+        <Channels />
+        <Content />
+      </AppLayout>
     </div>
   );
 };
