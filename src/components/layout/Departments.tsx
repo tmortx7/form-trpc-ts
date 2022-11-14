@@ -1,9 +1,10 @@
 import Link from "next/link";
+import { IEditDepartment } from "../../schema/department.schema";
 
-const department = ({ id, alias }) => (
-  <Link key={`department-${id}`} href={`/view-department/${id}`}>
+const department = ({ id, alias }: IEditDepartment) => (
+  <Link key={`department-${id}`} href={`/department/view-department/${id}`}>
     <li>
-      <button className="btn btn-secondary mb-4 w-20">{alias}</button>
+      <button className="btn btn-secondary ml-2 mb-4 w-20">{alias}</button>
     </li>
   </Link>
 );
