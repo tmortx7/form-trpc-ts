@@ -1,8 +1,8 @@
-/**
- * This file contains the root router of your tRPC-backend
- */
 import { router } from "../trpc";
+import { departmentRouter } from "./department";
 
-export const appRouter = router({});
+export const appRouter = router({
+  department: departmentRouter,
+});
 
 export type AppRouter = typeof appRouter;

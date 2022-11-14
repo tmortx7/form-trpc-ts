@@ -11,6 +11,7 @@
     "prettier-watch": "onchange 'src/**/*.ts' -- prettier --write {{changed}}"
   },
   "dependencies": {
+    "@prisma/client": "4.6.1",
     "@tailwindcss/typography": "^0.5.8",
     "@tanstack/react-query": "^4.14.5",
     "@trpc/client": "^10.0.0-rc.5",
@@ -26,7 +27,7 @@
     "formik": "^2.2.9",
     "lodash": "^4.17.21",
     "next": "13.0.2",
-    "prisma": "^4.6.0",
+    "prisma": "^4.6.1",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "superjson": "^1.11.0",
